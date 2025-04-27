@@ -1,0 +1,6 @@
+@ST10382076_API_EF_PROGPOE2_HostAddress = http://localhost:5199
+
+GET {{ST10382076_API_EF_PROGPOE2_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
