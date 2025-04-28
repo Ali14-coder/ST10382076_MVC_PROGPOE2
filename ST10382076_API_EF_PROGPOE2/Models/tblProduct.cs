@@ -15,7 +15,7 @@ namespace ST10382076_API_EF_PROGPOE2.Models
             public string ProductDescription { get; set; }
 
             [Required]
-            public decimal ProductPrice { get; set; }
+            public double ProductPrice { get; set; }
 
             public string ProductImage { get; set; }
 

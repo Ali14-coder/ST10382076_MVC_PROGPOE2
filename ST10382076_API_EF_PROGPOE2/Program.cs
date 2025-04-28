@@ -1,6 +1,7 @@
 
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Design;
+using ST10382076_API_EF_PROGPOE2.Services;
 
 namespace ST10382076_API_EF_PROGPOE2
 {
@@ -10,12 +11,11 @@ namespace ST10382076_API_EF_PROGPOE2
         {
             var builder = WebApplication.CreateBuilder(args);
 
-            //services.AddDbContext<ApplicationDbContext>(options =>
-            //    options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
-        
-        // Add services to the container.
+            builder.Services.AddDbContext<ApplicationDbContext>(options =>
+                options.UseSqlServer(builder.Configuration.GetConnectionString("DbServer")));
+            // Add services to the container.
 
-        builder.Services.AddControllers();
+            builder.Services.AddControllers();
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
