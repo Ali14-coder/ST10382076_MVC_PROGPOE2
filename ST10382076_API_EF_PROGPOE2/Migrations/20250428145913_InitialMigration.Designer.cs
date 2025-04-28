@@ -12,7 +12,7 @@ using ST10382076_API_EF_PROGPOE2.Services;
 namespace ST10382076_API_EF_PROGPOE2.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20250428144322_InitialMigration")]
+    [Migration("20250428145913_InitialMigration")]
     partial class InitialMigration
     {
         /// <inheritdoc />
@@ -69,7 +69,7 @@ namespace ST10382076_API_EF_PROGPOE2.Migrations
                         new
                         {
                             ProductID = 1,
-                            ProductDateTimeAdded = new DateTime(2025, 4, 28, 14, 43, 22, 105, DateTimeKind.Utc).AddTicks(2011),
+                            ProductDateTimeAdded = new DateTime(2025, 4, 28, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             ProductDescription = "High-efficiency solar irrigation system for medium-sized farms.",
                             ProductImage = "solar_pump.jpg",
                             ProductName = "Solar Powered Irrigation Pump",
@@ -80,7 +80,7 @@ namespace ST10382076_API_EF_PROGPOE2.Migrations
                         new
                         {
                             ProductID = 2,
-                            ProductDateTimeAdded = new DateTime(2025, 4, 28, 14, 43, 22, 105, DateTimeKind.Utc).AddTicks(2799),
+                            ProductDateTimeAdded = new DateTime(2025, 4, 27, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             ProductDescription = "Small-scale wind turbine optimized for rural farm energy generation.",
                             ProductImage = "wind_turbine.jpg",
                             ProductName = "Wind Turbine for Farms",
@@ -91,7 +91,7 @@ namespace ST10382076_API_EF_PROGPOE2.Migrations
                         new
                         {
                             ProductID = 3,
-                            ProductDateTimeAdded = new DateTime(2025, 4, 28, 14, 43, 22, 105, DateTimeKind.Utc).AddTicks(2801),
+                            ProductDateTimeAdded = new DateTime(2025, 4, 21, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             ProductDescription = "Complete biogas system suitable for agricultural waste-to-energy conversion.",
                             ProductImage = "biogas_kit.jpg",
                             ProductName = "Biogas Digester Kit",

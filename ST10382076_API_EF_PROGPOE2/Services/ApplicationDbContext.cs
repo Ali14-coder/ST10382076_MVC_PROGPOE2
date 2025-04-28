@@ -86,7 +86,7 @@ namespace ST10382076_API_EF_PROGPOE2.Services
                         ProductDescription = "High-efficiency solar irrigation system for medium-sized farms.",
                         ProductPrice = 35000.00,
                         ProductImage = "solar_pump.jpg",
-                        ProductDateTimeAdded = DateTime.UtcNow,
+                        ProductDateTimeAdded = new DateTime(2025, 4, 28),
                         ProductType = "Solar",
                         UserID = 1 // Added by Employee Emily
                     },
@@ -97,7 +97,7 @@ namespace ST10382076_API_EF_PROGPOE2.Services
                         ProductDescription = "Small-scale wind turbine optimized for rural farm energy generation.",
                         ProductPrice = 50000.00,
                         ProductImage = "wind_turbine.jpg",
-                        ProductDateTimeAdded = DateTime.UtcNow,
+                        ProductDateTimeAdded = new DateTime(2025, 4, 27),
                         ProductType = "Wind",
                         UserID = 1
                     },
@@ -108,7 +108,7 @@ namespace ST10382076_API_EF_PROGPOE2.Services
                         ProductDescription = "Complete biogas system suitable for agricultural waste-to-energy conversion.",
                         ProductPrice = 25000.00,
                         ProductImage = "biogas_kit.jpg",
-                        ProductDateTimeAdded = DateTime.UtcNow,
+                        ProductDateTimeAdded = new DateTime(2025, 4, 21),
                         ProductType = "Biogas",
                         UserID = 1
                     }

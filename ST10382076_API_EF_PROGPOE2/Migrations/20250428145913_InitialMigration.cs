@@ -106,9 +106,9 @@ namespace ST10382076_API_EF_PROGPOE2.Migrations
                 columns: new[] { "ProductID", "ProductDateTimeAdded", "ProductDescription", "ProductImage", "ProductName", "ProductPrice", "ProductType", "UserID" },
                 values: new object[,]
                 {
-                    { 1, new DateTime(2025, 4, 28, 14, 43, 22, 105, DateTimeKind.Utc).AddTicks(2011), "High-efficiency solar irrigation system for medium-sized farms.", "solar_pump.jpg", "Solar Powered Irrigation Pump", 35000.0, "Solar", 1 },
-                    { 2, new DateTime(2025, 4, 28, 14, 43, 22, 105, DateTimeKind.Utc).AddTicks(2799), "Small-scale wind turbine optimized for rural farm energy generation.", "wind_turbine.jpg", "Wind Turbine for Farms", 50000.0, "Wind", 1 },
-                    { 3, new DateTime(2025, 4, 28, 14, 43, 22, 105, DateTimeKind.Utc).AddTicks(2801), "Complete biogas system suitable for agricultural waste-to-energy conversion.", "biogas_kit.jpg", "Biogas Digester Kit", 25000.0, "Biogas", 1 }
+                    { 1, new DateTime(2025, 4, 28, 0, 0, 0, 0, DateTimeKind.Utc), "High-efficiency solar irrigation system for medium-sized farms.", "solar_pump.jpg", "Solar Powered Irrigation Pump", 35000.0, "Solar", 1 },
+                    { 2, new DateTime(2025, 4, 27, 0, 0, 0, 0, DateTimeKind.Utc), "Small-scale wind turbine optimized for rural farm energy generation.", "wind_turbine.jpg", "Wind Turbine for Farms", 50000.0, "Wind", 1 },
+                    { 3, new DateTime(2025, 4, 21, 0, 0, 0, 0, DateTimeKind.Utc), "Complete biogas system suitable for agricultural waste-to-energy conversion.", "biogas_kit.jpg", "Biogas Digester Kit", 25000.0, "Biogas", 1 }
                 });
 
             migrationBuilder.CreateIndex(
