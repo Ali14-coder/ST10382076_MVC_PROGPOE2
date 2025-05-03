@@ -21,6 +21,10 @@ namespace ST10382076_API_EF_PROGPOE2.Models
         [StringLength(100)]
         public string UserSurname { get; set; }
 
+        [Required]
+        [StringLength(100)]
+        public string UserEmail { get; set; }
+
         //all null fields
         public string UserBio { get; set; }
         public string UserProfileImage { get; set; }

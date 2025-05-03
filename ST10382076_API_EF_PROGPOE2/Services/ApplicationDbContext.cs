@@ -33,6 +33,7 @@ namespace ST10382076_API_EF_PROGPOE2.Services
                         RoleID = 1, // Employee
                         UserName = "Emily",
                         UserSurname = "Greenfield",
+                        UserEmail = "egreenfield@gmail.com",
                         UserBio = "Specialist in sustainable farming technologies.",
                         UserProfileImage = "emily_profile.jpg",
                         UserImageUpload = "emily_upload.jpg",
@@ -49,6 +50,7 @@ namespace ST10382076_API_EF_PROGPOE2.Services
                         RoleID = 2, // Farmer
                         UserName = "John",
                         UserSurname = "Nkosi",
+                        UserEmail = "jnkosi@gmail.com",
                         UserBio = "Experienced maize and wheat farmer transitioning to renewable energy.",
                         UserProfileImage = "john_profile.jpg",
                         UserImageUpload = "john_upload.jpg",
@@ -65,6 +67,7 @@ namespace ST10382076_API_EF_PROGPOE2.Services
                         RoleID = 3, // Customer
                         UserName = "Sara",
                         UserSurname = "Mthembu",
+                        UserEmail = "smthembu@gmail.com",
                         UserBio = "Purchasing green tech solutions for her family's farm.",
                         UserProfileImage = "sara_profile.jpg",
                         UserImageUpload = "sara_upload.jpg",
