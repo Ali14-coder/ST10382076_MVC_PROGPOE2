@@ -1,10 +1,11 @@
 ﻿using System.ComponentModel.DataAnnotations.Schema;
 using System.ComponentModel.DataAnnotations;
 using System.Data;
+using Microsoft.AspNetCore.Identity;
 
 namespace ST10382076_API_EF_PROGPOE2.Models
 {
-    public class tblUser
+    public class tblUser : IdentityUser
     {
         [Key] //primary key
         public int UserID { get; set; }
