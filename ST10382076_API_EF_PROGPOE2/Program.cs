@@ -4,11 +4,12 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Design;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
-using ST10382076_API_EF_PROGPOE2.Services;
+using ST10382076_API_EF_PROGPOE2.Models;
 using System.IdentityModel.Tokens.Jwt;
 using System.Linq;
 using System.Security.Claims;
 using System.Text;
+using ST10382076_API_EF_PROGPOE2;
 
 
 
@@ -23,11 +24,24 @@ namespace ST10382076_API_EF_PROGPOE2
             builder.Services.AddDbContext<ApplicationDbContext>(options =>
                 options.UseSqlServer(builder.Configuration.GetConnectionString("DbServer")));
 
-            #region Configuring Services
-            //Adding the Identity to the program
-            builder.Services.AddIdentity<IdentityUser, IdentityRole>()
-                .AddEntityFrameworkStores<ApplicationDbContext>()
-                .AddDefaultTokenProviders();
+            ////adding the user class to dbcontext
+            //builder.Services.AddDefaultIdentity<tblUser>()
+            //    .AddEntityFrameworkStores<ApplicationDbContext>();
+
+            //#region Configuring Services
+            ////Adding the Identity to the program
+            //builder.Services.AddIdentity<IdentityUser, IdentityRole>()
+            //    .AddEntityFrameworkStores<ApplicationDbContext>()
+            //    .AddDefaultTokenProviders();
+
+            // Full setup
+            builder.Services.AddIdentity<tblUser, IdentityRole>(options =>
+            {
+                options.SignIn.RequireConfirmedAccount = true;
+            })
+            .AddEntityFrameworkStores<ApplicationDbContext>()
+            .AddDefaultTokenProviders();
+
 
             //Adding authorization
             builder.Services.AddAuthorization();
@@ -66,7 +80,7 @@ namespace ST10382076_API_EF_PROGPOE2
                 });
             });
 
-            #endregion
+            //#endregion
 
             var app = builder.Build();
 
