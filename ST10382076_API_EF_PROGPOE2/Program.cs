@@ -34,8 +34,10 @@ namespace ST10382076_API_EF_PROGPOE2
 
             // Add services to the container.
             builder.Services.AddControllers();
-            
+            builder.Services.AddRazorPages();
             builder.Services.AddEndpointsApiExplorer();
+
+
             builder.Services.AddSwaggerGen(opt =>
             {
                 opt.SwaggerDoc("v1", new OpenApiInfo { Title = "ST10382076_API_EF_PROGPOE2", Version = "v1" });
@@ -85,11 +87,15 @@ namespace ST10382076_API_EF_PROGPOE2
 
             app.UseHttpsRedirection();
 
+            app.UseAuthentication();
             app.UseAuthorization();
 
 
             app.MapControllers();
-
+            app.UseEndpoints(endpoints =>
+            {
+                endpoints.MapRazorPages();
+            });
             app.Run();
         }
 
