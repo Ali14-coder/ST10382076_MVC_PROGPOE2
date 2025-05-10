@@ -48,7 +48,6 @@ namespace ST10382076_API_EF_PROGPOE2
 
             // Add services to the container.
             builder.Services.AddControllers();
-            builder.Services.AddRazorPages();
             builder.Services.AddEndpointsApiExplorer();
 
 
@@ -106,10 +105,7 @@ namespace ST10382076_API_EF_PROGPOE2
 
 
             app.MapControllers();
-            app.UseEndpoints(endpoints =>
-            {
-                endpoints.MapRazorPages();
-            });
+           
             app.Run();
         }
 
